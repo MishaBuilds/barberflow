@@ -1,5 +1,9 @@
 # 💈 BarberFlow — учебный Telegram-бот для портфолио
 
+> **Live-демо витрины:** https://mishabuilds.github.io/barberflow/
+> **Репозиторий:** https://github.com/MishaBuilds/barberflow
+> Проект также представлен в портфолио: https://mishabuilds.github.io/portfolio/
+
 Демонстрационный бот **выдуманной** парикмахерской. Все мастера, услуги, даты и время — тестовые.
 Никаких реальных данных и платных сервисов.
 
