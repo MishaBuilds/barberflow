@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="«Северный клинок» — демонстрационный сайт вымышленного барбершопа. Услуги, мастера, онлайн-запись (демо-режим). Все данные выдуманы.">
+  <meta name="theme-color" content="#14110d">
+  <title>Северный клинок — барбершоп · демо-сайт</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314110d'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23c69a4b' font-family='Georgia,serif'%3E%D0%A1%D0%9A%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <div class="demo-banner" role="note">
+    <p><strong>Демо для портфолио:</strong> вымышленный барбершоп «Северный клинок». Мастера, цены, отзывы и адрес придуманы. Онлайн-запись никуда не отправляется и ничего не бронирует по-настоящему.</p>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Северный клинок — на главную">
+        <span class="brand-mark" aria-hidden="true">СК</span>
+        <span class="brand-text">
+          <span class="brand-name">Северный клинок</span>
+          <span class="brand-sub">барбершоп · демо</span>
+        </span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги и цены</a>
+        <a href="#masters">Мастера</a>
+        <a href="#booking">Запись</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="#booking">Записаться</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Барбершоп · открыт ежедневно 10:00–20:00</p>
+          <h1 id="hero-title">Стрижка, после которой не нужно объяснять, чего вы хотели</h1>
+          <p class="lede">Классика и фейд, борода и королевское бритьё. Спокойная запись за две минуты: выбираете услугу, мастера и время — без звонков и ожидания.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#booking">Выбрать время</a>
+            <a class="btn btn-ghost" href="#services">Смотреть цены</a>
+          </div>
+          <dl class="hero-meta">
+            <div><dt>Рейтинг (демо)</dt><dd>4,9 · 212 отзывов</dd></div>
+            <div><dt>Адрес (выдуман)</dt><dd>ул. Примерная, 12</dd></div>
+            <div><dt>Средний визит</dt><dd>45–60 минут</dd></div>
+          </dl>
+        </div>
+        <aside class="hero-card" aria-label="Ближайшее свободное время">
+          <div class="hero-card-head">
+            <h2>Ближайшие окна</h2>
+            <p id="hero-card-date">подбираем…</p>
+          </div>
+          <ul class="hero-slots" id="hero-slots">
+            <li class="skeleton" aria-hidden="true"></li>
+            <li class="skeleton" aria-hidden="true"></li>
+            <li class="skeleton" aria-hidden="true"></li>
+          </ul>
+          <a class="btn btn-card" href="#booking" id="hero-book-link">Записаться на это время</a>
+          <p class="fineprint">Демо-расписание генерируется локально в вашем браузере.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ STRIP ============ -->
+    <section class="strip" aria-label="Коротко о нас">
+      <div class="container strip-grid">
+        <div class="strip-item"><strong>3 мастера</strong><span>фейд, борода, креатив</span></div>
+        <div class="strip-item"><strong>6 услуг</strong><span>от 500 до 2&nbsp;100 ₽, цены демо</span></div>
+        <div class="strip-item"><strong>Без звонков</strong><span>запись прямо на сайте</span></div>
+        <div class="strip-item"><strong>Кофе — за наш счёт</strong><span>и честный совет по укладке</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Услуги и цены</p>
+            <h2 id="services-title">Честный прайс без «от» и звёздочек</h2>
+            <p class="section-sub">Цена фиксируется при записи. Длительность — реальная, с запасом на консультацию. Все цены выдуманные, для демонстрации.</p>
+          </div>
+        </div>
+        <ul class="services-list" id="services-list"><!-- рендерит app.js --></ul>
+      </div>
+    </section>
+
+    <!-- ============ MASTERS ============ -->
+    <section class="section section-alt" id="masters" aria-labelledby="masters-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Мастера</p>
+            <h2 id="masters-title">Выбирайте по руке, а не по фото из стока</h2>
+            <p class="section-sub">Все мастера и биографии выдуманы. Портреты заменены монограммами осознанно — чтобы не выдавать чужие лица за своих сотрудников.</p>
+          </div>
+        </div>
+        <ul class="masters-grid" id="masters-grid"><!-- рендерит app.js --></ul>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Онлайн-запись · демо-режим</p>
+            <h2 id="booking-title">Запись за пять шагов</h2>
+            <p class="section-sub">Данные хранятся только в вашем браузере (localStorage). Реальная запись владельцу не отправляется — это честная демонстрация интерфейса.</p>
+          </div>
+          <button class="btn btn-ghost btn-sm" id="my-bookings-btn" type="button">Мои демо-записи <span class="count-badge" id="my-bookings-count" hidden>0</span></button>
+        </div>
+
+        <div class="booking-layout">
+          <div class="booking-main">
+            <ol class="stepper" id="stepper" aria-label="Шаги записи">
+              <li data-step="1"><span class="step-n" aria-hidden="true">1</span><span class="step-t">Услуга</span></li>
+              <li data-step="2"><span class="step-n" aria-hidden="true">2</span><span class="step-t">Мастер</span></li>
+              <li data-step="3"><span class="step-n" aria-hidden="true">3</span><span class="step-t">Дата и время</span></li>
+              <li data-step="4"><span class="step-n" aria-hidden="true">4</span><span class="step-t">Контакты</span></li>
+              <li data-step="5"><span class="step-n" aria-hidden="true">5</span><span class="step-t">Готово</span></li>
+            </ol>
+
+            <div class="step-panels">
+              <section class="step-panel" data-panel="1" aria-labelledby="s1-title">
+                <h3 id="s1-title">1. Выберите услугу</h3>
+                <div class="choice-grid" id="choice-services" role="radiogroup" aria-label="Услуга"></div>
+                <p class="field-error" id="err-service" role="alert" hidden>Выберите услугу, чтобы продолжить.</p>
+              </section>
+
+              <section class="step-panel" data-panel="2" aria-labelledby="s2-title" hidden>
+                <h3 id="s2-title">2. Выберите мастера</h3>
+                <div class="choice-grid" id="choice-masters" role="radiogroup" aria-label="Мастер"></div>
+                <p class="field-error" id="err-master" role="alert" hidden>Выберите мастера — или «Кто свободен раньше», чтобы продолжить.</p>
+              </section>
+
+              <section class="step-panel" data-panel="3" aria-labelledby="s3-title" hidden>
+                <h3 id="s3-title">3. Дата и время</h3>
+                <div class="date-row" id="date-row" role="radiogroup" aria-label="Дата"></div>
+                <div class="slots-grid" id="slots-grid" role="radiogroup" aria-label="Время"></div>
+                <p class="slots-empty" id="slots-empty" hidden>На эту дату свободных окон нет. Выберите другую дату — мы подсветили, где есть места.</p>
+                <p class="field-error" id="err-slot" role="alert" hidden>Выберите свободное время.</p>
+              </section>
+
+              <section class="step-panel" data-panel="4" aria-labelledby="s4-title" hidden>
+                <h3 id="s4-title">4. Как с вами связаться</h3>
+                <form id="contact-form" novalidate>
+                  <div class="form-grid">
+                    <div class="field">
+                      <label for="f-name">Имя <span aria-hidden="true">*</span></label>
+                      <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Как к вам обращаться" minlength="2" maxlength="40" required>
+                      <p class="field-error" id="err-name" role="alert" hidden>Введите имя — минимум 2 буквы.</p>
+                    </div>
+                    <div class="field">
+                      <label for="f-phone">Телефон <span aria-hidden="true">*</span></label>
+                      <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 123-45-67" required>
+                      <p class="field-error" id="err-phone" role="alert" hidden>Введите телефон в формате +7 900 123-45-67.</p>
+                    </div>
+                    <div class="field field-full">
+                      <label for="f-comment">Комментарий <span class="optional">(необязательно)</span></label>
+                      <textarea id="f-comment" name="comment" rows="2" maxlength="300" placeholder="Например: «хочу покороче по бокам, верх оставить»"></textarea>
+                    </div>
+                  </div>
+                  <label class="consent">
+                    <input type="checkbox" id="f-consent" required>
+                    <span>Понимаю, что это <strong>демо-режим</strong>: данные останутся в моём браузере и никуда не отправятся. <span aria-hidden="true">*</span></span>
+                  </label>
+                  <p class="field-error" id="err-consent" role="alert" hidden>Подтвердите, что понимаете демо-режим.</p>
+                </form>
+              </section>
+
+              <section class="step-panel" data-panel="5" aria-labelledby="s5-title" hidden>
+                <h3 id="s5-title">5. Проверьте и подтвердите</h3>
+                <div id="confirm-box"></div>
+                <p class="field-error" id="err-confirm" role="alert" hidden>Это окно только что заняли. Выберите другое время.</p>
+              </section>
+
+              <section class="step-panel step-success" data-panel="done" aria-labelledby="done-title" hidden>
+                <div class="success-badge" aria-hidden="true">✓</div>
+                <h3 id="done-title">Вы записаны — в демо-режиме</h3>
+                <div id="done-box"></div>
+                <p class="fineprint">Код записи сохраните на всякий случай. Ничего никуда не отправлено: запись живёт только в localStorage вашего браузера.</p>
+              </section>
+            </div>
+
+            <div class="booking-nav">
+              <button class="btn btn-ghost" id="btn-back" type="button" disabled>← Назад</button>
+              <button class="btn btn-primary" id="btn-next" type="button">Далее →</button>
+            </div>
+          </div>
+
+          <aside class="booking-summary" aria-label="Ваш выбор">
+            <h2>Ваш выбор</h2>
+            <dl id="summary-list">
+              <div><dt>Услуга</dt><dd id="sum-service">—</dd></div>
+              <div><dt>Мастер</dt><dd id="sum-master">—</dd></div>
+              <div><dt>Дата</dt><dd id="sum-date">—</dd></div>
+              <div><dt>Время</dt><dd id="sum-time">—</dd></div>
+              <div class="sum-total"><dt>Итого (демо)</dt><dd id="sum-price">—</dd></div>
+            </dl>
+            <button class="btn btn-ghost btn-sm btn-block" id="btn-reset" type="button">Начать заново</button>
+          </aside>
+        </div>
+
+        <!-- Мои записи -->
+        <div class="my-bookings" id="my-bookings" hidden>
+          <h3>Мои демо-записи в этом браузере</h3>
+          <ul id="my-bookings-list"></ul>
+          <p class="fineprint">Отмена освобождает окно обратно в расписание.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section-alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Отзывы</p>
+            <h2 id="reviews-title">Гости говорят — мы показываем как есть</h2>
+            <p class="section-sub">Все отзывы ниже выдуманы для демонстрации вёрстки. Настоящих клиентов у вымышленного барбершопа нет.</p>
+          </div>
+        </div>
+        <ul class="reviews-grid">
+          <li><blockquote>«Показал фото, получил лучше, чем на фото. Фейд держится третью неделю.»</blockquote><p class="review-who">Демо-отзыв · Игорь К. · стрижка у Алексея</p></li>
+          <li><blockquote>«Бороду наконец-то оформили, а не просто подровняли. Дали масло с собой и объяснили, что с ним делать.»</blockquote><p class="review-who">Демо-отзыв · Тимур А. · борода у Максима</p></li>
+          <li><blockquote>«Записался с телефона за минуту, напомнили накануне. Внутри тихо, без пафоса.»</blockquote><p class="review-who">Демо-отзыв · Денис В. · креативная стрижка у Кирилла</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <p class="eyebrow">Вопросы</p>
+        <h2 id="faq-title">Частые вопросы</h2>
+        <div class="faq">
+          <details><summary>Это настоящий барбершоп?</summary><p>Нет. «Северный клинок» — вымышленное название для портфолийного демо. Адрес, телефон, мастера и отзывы придуманы.</p></details>
+          <details><summary>Куда уходит моя заявка?</summary><p>Никуда. Запись сохраняется только в localStorage вашего браузера. Никаких серверов, звонков и SMS в демо-режиме нет.</p></details>
+          <details><summary>Сколько держится стрижка?</summary><p>В рамках демо-легенды: классика — 3–4 недели, фейд — 2–3 недели. Мастер подскажет ваш интервал на визите.</p></details>
+          <details><summary>Что если опоздаю?</summary><p>В демо-мире: до 10 минут — подождём и подвинем укладку, больше — предложим ближайшее свободное окно в расписании выше.</p></details>
+          <details><summary>А Telegram-бот BarberFlow при чём?</summary><p>Это тот же проект: бот ведёт запись через Telegram (исходники в папке <code>bot/</code>), а этот сайт — его витрина с тем же сценарием «услуга → мастер → время → подтверждение».</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTS ============ -->
+    <section class="section section-dark" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-grid">
+        <div>
+          <p class="eyebrow eyebrow-light">Контакты · всё выдумано</p>
+          <h2 id="contacts-title">ул. Примерная, 12.<br>Ищите латунные ножницы на двери.</h2>
+          <p class="section-sub">Ежедневно 10:00–20:00, последний гость — в 19:00. Демо-телефон и демо-почта никуда не ведут.</p>
+          <ul class="contact-list">
+            <li><span>Телефон (демо)</span><a href="tel:+79000000000">+7 900 000-00-00</a></li>
+            <li><span>Почта (демо)</span><a href="mailto:privet@severny-klinok.demo">privet@severny-klinok.demo</a></li>
+            <li><span>Как найти (демо)</span><span>5 минут от метро «Примерная», вход со двора</span></li>
+          </ul>
+        </div>
+        <div class="contacts-card">
+          <h3>Часы и окна сегодня</h3>
+          <p id="today-line">—</p>
+          <a class="btn btn-primary btn-block" href="#booking">Записаться онлайн</a>
+          <a class="btn btn-ghost btn-block" href="#faq">Сначала вопросы</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Северный клинок · демо</p>
+        <p class="fineprint">Портфолийный проект MishaBuilds. Все названия, цены, люди и адреса вымышлены. Не является действующим бизнесом.</p>
+      </div>
+      <nav aria-label="Навигация в подвале">
+        <a href="#services">Услуги</a>
+        <a href="#masters">Мастера</a>
+        <a href="#booking">Запись</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <p class="fineprint">Демо-режим: персональных данных не собираем, на сервер ничего не отправляем. <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
